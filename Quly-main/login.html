@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style-login.css">
+    <title>Quly</title>
+</head>
+<body>
+
+    <section>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="Quly.html">
+                        <span style="color: #0EAEEB">{</span>
+                        <span style="color: #FFFFFF">Quly</span>
+                        <span style="color: #0EAEEB">;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container-regis">
+            <div class="cardregis">
+                <div class="inner-box" id="cardregis">
+                    <div class="card-front">
+                        <h2>Login</h2>
+                        <form class="low">
+                            <div class="input-box">
+                                <label for="username">Username</label>
+                                <br><span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <input type="text" placeholder="Type your Username" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="pass">Password</label>
+                                <br><span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="remember-forgot">
+                                <label for="rem"><input type="checkbox" name="" id="">Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Log in</button>
+                            <p class="orwith">or login with</p>
+                            <div class="logos">
+                                <a href="#"><img src="./Materialss/email.png" alt=""></a>
+                                <a href="#"><img src="./Materialss/twitter.png" alt=""></a>
+                                <a href="#"><img src="./Materialss/facebook.png" alt=""></a>
+                            </div>
+                        </form>
+                        <div class="login-register">
+                            <span>No account?</span> <button type="button" class="register-link" onclick="openRegister()">Register now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-back">
+                        <h2>Register</h2>
+                        <form>
+                            <div class="input-box">
+                                <label>Username</label>
+                                <br><span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <input type="text" placeholder="First name" required>
+                                <input type="text" placeholder="Last name" required>
+                            </div>
+                            <div class="input-box">
+                                <label>Email</label>
+                                <br><span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                                <input type="email" placeholder="Enter your Email" required>
+                            </div>
+                            <div class="input-box">
+                                <label>Password</label>
+                                <br><span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" placeholder="Enter password" required>
+                                <input type="password" placeholder="Re-enter password" required>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                        <div class="login-register2">
+                            <span>Already have an account?</span> <button type="button" class="register-link" onclick="openLogin()">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
